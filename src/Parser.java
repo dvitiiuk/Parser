@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Parser {
+    private int taskNumber = 0;
     private List<String> header = new ArrayList<String>();
 
     public List<String> getHeader() {
@@ -17,7 +18,8 @@ public class Parser {
     }
 
     public List<String> parseByTaskNumber(int taskNumber) throws FileNotFoundException {
-        return parse(HTMLContentGetter.getLogByUrl(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%s/consoleFull", taskNumber)));
+        this.taskNumber = taskNumber;
+        return parse(HTMLContentGetter.getLogByUrl(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%s/consoleText", taskNumber)));
     }
 
     public List<String> parseByURL(String url) throws FileNotFoundException {
@@ -27,52 +29,78 @@ public class Parser {
     private List<String> parse(String content) throws FileNotFoundException {
         List<String> res = new ArrayList<String>();
 
-        List<String> raw = new ArrayList<String>(Arrays.asList(content.split("\n")));
+        String header = "# Total test cases ran";
+        if(content.contains(header)) {
+            String summary = content.split(header)[1].split("# TestSuite Log")[0];
+            String clusterName = content.split("CLUSTER -> ")[1].split("\n")[0];
+            String forAdd = (header + summary).replaceAll(" ","_").replaceAll("\n"," ");
+            res.add(clusterName+" "+forAdd);
+        } else res.add(countAll(content));
 
-        int length = raw.size();
-        for (int k = 0; k < length; k++) {
-            int i = 0;
-            if (raw.get(i).startsWith("Results :")) {
-                int last = -1;
-                for (int j = i + 1; j < raw.size(); j++) {
-                    if (raw.get(j).startsWith("Tests run:")) {
-                        last = j;
-                        break;
-                    }
+
+        res.add(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%d/",taskNumber));
+
+        String[] raw = content.split("Results :");
+        String[] tests = new String[raw.length -1];
+        for (int i = 1; i < raw.length; i++) { tests[i-1] = raw[i].split("\nTests run:")[0]; }
+        for (String test : tests) {
+            if (test.contains("Tests in error:") || test.contains("Failed tests:")) {
+                test = test.replace("Tests in error:","");
+                test = test.replace("Failed tests:", "");
+                String[] lines = test.split("\n");
+                StringBuffer testForAdd = new StringBuffer();
+                for (String line : lines) {
+                    line = line.trim();
+                    if (line.length() > 0) { res.add(line); }
                 }
-                for (int aim = i + 1; aim < last; aim++) {
-                    String row = raw.get(aim).replace("Failed tests:  ", "").replace("Tests in error: ", "").trim();
-                    if (!(row.equals("\n") || row.equals(""))) {
-                        res.add(row);
-                    }
-                }
-            } else if (raw.get(i).startsWith("# TestSuite")) {
-                int j = i + 1;
-                while (raw.get(j).startsWith("# Total")) {
-                    header.add(raw.get(j));
-                    j++;
-                }
+                System.out.print(testForAdd);
             }
-            raw.remove(0);
         }
 
         return res;
     }
 
+    private String countAll(String log) {
+        String[] testsRun = log.split("Tests run: ");
+        String[] failed = log.split("Failures: ");
+        String[] error = log.split("Errors: ");
+        String[] skip = log.split("Skipped: ");
+        int errors = 0;
+        int testsSum = 0;
+        int failures = 0;
+        int skiped = 0;
+
+        for(int i = 1; i < testsRun.length; i+=2) {
+            errors+=Integer.parseInt(error[i].split(",")[0]);
+            failures+=Integer.parseInt(failed[i].split(",")[0]);
+            testsSum+=Integer.parseInt(testsRun[i].split(",")[0]);
+            skiped+=Integer.parseInt(skip[i].split(",")[0].split("\n")[0]);
+        }
+        int passed = testsSum - errors - skiped - failures;
+        return "#_Total_test_cases_ran______________:_" + testsSum +
+               " #_Total_test_cases_passed___________:_" + passed +
+               " #_Total_test_cases_failed___________:_" + failures +
+               " #_Total_test_cases_skipped__________:_" + skiped +
+               " #_Total_test_cases_failed_dependecy_:_" + errors;
+    }
+
     public Object[][] getCellsForTable(List<String> failedTests) {
-        Object[][] res = new Object[failedTests.size()][2];
+        Object[][] res = new Object[failedTests.size()-1][2];
+
+        res[0][0] = failedTests.get(0);
+        res[0][1] = failedTests.get(1);
         Pattern p = Pattern.compile("\\(([\\w\\d]+\\.)+([\\w\\d]+)\\)");
         String className = "";
-        for (int i = 0; i < failedTests.size(); i++) {
+        for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
             m.find();
             if (m.group(2).equals(className)) {
-                res[i][0] = "";
+                res[i-1][0] = "";
             } else {
                 className = m.group(2);
-                res[i][0] = className;
+                res[i-1][0] = className;
             }
-            res[i][1] = failedTests.get(i);
+            res[i-1][1] = failedTests.get(i);
         }
         return res;
     }
