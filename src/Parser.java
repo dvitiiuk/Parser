@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 public class Parser {
     private int taskNumber = 0;
+    private String fileName = "";
+
     private List<String> header = new ArrayList<String>();
 
     public List<String> getHeader() {
@@ -14,6 +16,8 @@ public class Parser {
     }
 
     public List<String> parseByFileName(String fileName) throws FileNotFoundException {
+        String[] fileNameSplitted = fileName.split("/");
+        this.fileName = fileNameSplitted[fileNameSplitted.length-1].replaceAll("-run.log","");
         return parse(FileWorker.read(fileName));
     }
 
@@ -23,6 +27,12 @@ public class Parser {
     }
 
     public List<String> parseByURL(String url) throws FileNotFoundException {
+        if (url.contains("Run-HDP-Tests")) {
+            this.taskNumber = Integer.parseInt(url.split("Tests/")[1].split("/")[0]);
+        } else {
+            String[] urlSplitted = url.split("/");
+            this.fileName = urlSplitted[urlSplitted.length-1].replaceAll("-run.log","");
+        }
         return parse(HTMLContentGetter.getLogByUrl(url));
     }
 
@@ -51,7 +61,9 @@ public class Parser {
                 StringBuffer testForAdd = new StringBuffer();
                 for (String line : lines) {
                     line = line.trim();
-                    if (line.length() > 0) { res.add(line); }
+                    if (line.length() > 0 && line.startsWith("test")) {
+                        res.add(line);
+                    }
                 }
                 System.out.print(testForAdd);
             }
@@ -77,7 +89,7 @@ public class Parser {
             skiped+=Integer.parseInt(skip[i].split(",")[0].split("\n")[0]);
         }
         int passed = testsSum - errors - skiped - failures;
-        return "#_Total_test_cases_ran______________:_" + testsSum +
+        return fileName + " #_Total_test_cases_ran______________:_" + testsSum +
                " #_Total_test_cases_passed___________:_" + passed +
                " #_Total_test_cases_failed___________:_" + failures +
                " #_Total_test_cases_skipped__________:_" + skiped +
@@ -94,7 +106,8 @@ public class Parser {
         for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
             m.find();
-            if (m.group(2).equals(className)) {
+            System.out.println(failedTests.get(i));
+            if (className.equals(m.group(2))) {
                 res[i-1][0] = "";
             } else {
                 className = m.group(2);

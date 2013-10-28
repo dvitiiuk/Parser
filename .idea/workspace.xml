@@ -6,12 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="083e2e2b-6609-4272-81ce-a2692027cf00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LogChooser.java" />
+    <list default="true" id="083e2e2b-6609-4272-81ce-a2692027cf00" name="Default" comment="Change column name">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parser.java" afterPath="$PROJECT_DIR$/src/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="parser.iws" />
@@ -19,7 +15,7 @@
     <file path="/parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381827193934" ignored="false" />
     <file path="/FileWorker.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381822449976" ignored="false" />
     <file path="/main.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382609731207" ignored="false" />
-    <file path="/Parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382707521826" ignored="false" />
+    <file path="/Parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382709937746" ignored="false" />
     <file path="/fragment.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382706138170" ignored="false" />
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/UITestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381830967602" ignored="false" />
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/InstallHadoop.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381834395427" ignored="false" />
@@ -37,14 +33,14 @@
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestAmbariSmokeFunctionality.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381834427139" ignored="false" />
     <file path="/HTMLContentGetter.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381852144368" ignored="false" />
     <file path="/TableView.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381912209225" ignored="false" />
-    <file path="/Dummy.txt" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382707899176" ignored="false" />
+    <file path="/Dummy.txt" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382708207334" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/run_ambari_tests_ec2.sh" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/ambari.properties" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602822789" ignored="false" />
     <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/ambari.properties" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
     <file path="/a.dummy" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382431743981" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/uifrm.log" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382697597404" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/.idea/workspace.xml" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382707881558" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/admin_page/TestEnableHA.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/uifrm.log" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382950339647" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/.idea/workspace.xml" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382950352733" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/admin_page/TestEnableHA.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947461950" ignored="false" />
     <file path="/TestEnableHA.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382536259343" ignored="false" />
     <file path="$PROJECT_DIR$/../test/src/LogParser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382706304366" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/customize_services_page/TestNagiosAndSmokeTestUsers.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
@@ -52,7 +48,7 @@
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/installer/ReviewPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/ClusterManager.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/AmbariProperties.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382605391345" ignored="false" />
-    <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/InstallHadoop.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
+    <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/InstallHadoop.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382712916611" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/KerberosPair.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/install_start_and_test_page/TestInstallerWarnings.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/hosts_page/TestAlerts.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
@@ -68,11 +64,48 @@
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/MonitoringUtilities.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="/FileChooserDemo.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382617293829" ignored="false" />
     <file path="/LogChooser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382617292286" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/UITestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382701167551" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/EndToEndTestForServiceConfiguration.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestMapReduce2.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/ClusterManager.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
-    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/ServicesPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382684580789" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/UITestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947460986" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/EndToEndTestForServiceConfiguration.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestMapReduce2.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/ClusterManager.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/ServicesPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/securityPage/SecurityApplyPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestAmbariSmokeFunctionality.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/securityPage/SecurityStartPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestHbaseSmokeTestFailure.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/hosts_page/TestHostOrangeStatusMarker.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestAlternativeStackSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/UninstallCluster.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/hosts_page/TestAddingComponents.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/WebDriverHelper.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/hosts_page/TestHostListSortingForPreserving.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/console/TestMasterKey.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestUpgrading.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/MonitoringUtilities.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/console/TestInstallSeparateSSLCertificate.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/admin_page/TestSecurityWithCustomValues.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/customize_services_page/TestNagiosAndSmokeTestUsers.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestServicePage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestJDK7Support.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/console/TestNonDefaultJDKInstallation.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/admin_page/TestEnablingSecurity.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/servicePage/AdminPageSecurityTab.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/customize_services_page/TestYarnNodeManagerDirs.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/install_start_and_test_page/TestInstallerWarnings.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/servicePage/ServicePage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/TestWithOneHost.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/AmbariProperties.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/NavigateToMonitoringTestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestHBaseSuperuser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/HostsPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/console/ldap/TestClearTextEliminatingForLDAPSCredentials.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestNNAndDNDirectoriesChanging.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/hosts_page/TestHostWithPOM.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/LoginPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/InstallHadoop.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/dashboard_page/TestDashboardUpdatesDatanodesLiveWidget.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/HostDetailsPage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
+    <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/opm/monitoring/pages/securityPage/SecurityConfigurePage.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382947463132" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,20 +170,16 @@
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="31" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#323#324#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Parser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="17" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-25.2">
-              <folding>
-                <element signature="e#1041#1049#0" expanded="true" />
-              </folding>
+            <state line="63" column="66" selection-start="2765" selection-end="2765" vertical-scroll-proportion="-0.022222223">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,10 +193,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogChooser.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LogChooser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LogChooser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="8" selection-start="4254" selection-end="4254" vertical-scroll-proportion="2.053232">
+            <state line="114" column="0" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,6 +212,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -277,8 +307,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,9 +327,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.main">
     <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true">
@@ -339,19 +369,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -378,6 +395,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -487,12 +517,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5499451" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -508,10 +537,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22678763" sideWeight="0.6059275" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39407244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22678763" sideWeight="0.67069155" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39297476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -605,9 +635,7 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_40/src.zip!/javax/swing/JMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="13" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="111" column="13" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_40/src.zip!/javax/swing/JTextArea.java">
@@ -626,23 +654,17 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_40/src.zip!/java/text/NumberFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="22" selection-start="6597" selection-end="6597" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="181" column="22" selection-start="6597" selection-end="6597" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_40/src.zip!/javax/swing/JTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="11" selection-start="7483" selection-end="7483" vertical-scroll-proportion="1.1026616">
-          <folding />
-        </state>
+        <state line="210" column="11" selection-start="7483" selection-end="7483" vertical-scroll-proportion="1.1026616" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_40/src.zip!/java/awt/BorderLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="299" column="31" selection-start="9517" selection-end="9517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="299" column="31" selection-start="9517" selection-end="9517" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileWorker.java">
@@ -669,18 +691,7 @@
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="31" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="17" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-25.2">
-          <folding>
-            <element signature="e#1041#1049#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,10 +704,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LogChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="8" selection-start="4254" selection-end="4254" vertical-scroll-proportion="2.053232">
+        <state line="114" column="0" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="66" selection-start="2765" selection-end="2765" vertical-scroll-proportion="-0.022222223">
+          <folding />
         </state>
       </provider>
     </entry>
