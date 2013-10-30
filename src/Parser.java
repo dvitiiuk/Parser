@@ -55,17 +55,16 @@ public class Parser {
         for (int i = 1; i < raw.length; i++) { tests[i-1] = raw[i].split("\nTests run:")[0]; }
         for (String test : tests) {
             if (test.contains("Tests in error:") || test.contains("Failed tests:")) {
+                System.out.println(test);
                 test = test.replace("Tests in error:","");
                 test = test.replace("Failed tests:", "");
                 String[] lines = test.split("\n");
-                StringBuffer testForAdd = new StringBuffer();
                 for (String line : lines) {
                     line = line.trim();
-                    if (line.length() > 0 && line.startsWith("test")) {
+                    if (line.length() > 0 && line.contains("com.hw")) {
                         res.add(line);
                     }
                 }
-                System.out.print(testForAdd);
             }
         }
 
@@ -106,7 +105,6 @@ public class Parser {
         for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
             m.find();
-            System.out.println(failedTests.get(i));
             if (className.equals(m.group(2))) {
                 res[i-1][0] = "";
             } else {
