@@ -6,8 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="083e2e2b-6609-4272-81ce-a2692027cf00" name="Default" comment="Filename is summary">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LogChooser.java" afterPath="$PROJECT_DIR$/src/LogChooser.java" />
+    <list default="true" id="083e2e2b-6609-4272-81ce-a2692027cf00" name="Default" comment="repaint fixed + filename fixed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="parser.iws" />
@@ -15,7 +14,7 @@
     <file path="/parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381827193934" ignored="false" />
     <file path="/FileWorker.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381822449976" ignored="false" />
     <file path="/main.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382609731207" ignored="false" />
-    <file path="/Parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383376089865" ignored="false" />
+    <file path="/Parser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383509922238" ignored="false" />
     <file path="/fragment.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382706138170" ignored="false" />
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/UITestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381830967602" ignored="false" />
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/installer/InstallHadoop.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381834395427" ignored="false" />
@@ -33,7 +32,7 @@
     <file path="$USER_HOME$/HW_GRID/qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/TestAmbariSmokeFunctionality.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381834427139" ignored="false" />
     <file path="/HTMLContentGetter.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381852144368" ignored="false" />
     <file path="/TableView.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1381912209225" ignored="false" />
-    <file path="/Dummy.txt" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383493683557" ignored="false" />
+    <file path="/Dummy.txt" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383511822615" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/run_ambari_tests_ec2.sh" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951463682" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/ambari.properties" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951463682" ignored="false" />
     <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/ambari.properties" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951182260" ignored="false" />
@@ -63,7 +62,7 @@
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/console/TestInstallSeparateSSLCertificate.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382602011510" ignored="false" />
     <file path="$PROJECT_DIR$/../master-qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/MonitoringUtilities.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951463682" ignored="false" />
     <file path="/FileChooserDemo.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382617293829" ignored="false" />
-    <file path="/LogChooser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383505519864" ignored="false" />
+    <file path="/LogChooser.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1383509150360" ignored="false" />
     <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ui/util/UITestSetup.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951182260" ignored="false" />
     <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/EndToEndTestForServiceConfiguration.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951182260" ignored="false" />
     <file path="$PROJECT_DIR$/../qe-ambariautomation/uifrm/src/test/java/com/hw/ambari/ui/tests/monitoring/services_page/TestMapReduce2.java" changelist="083e2e2b-6609-4272-81ce-a2692027cf00" time="1382951182260" ignored="false" />
@@ -194,7 +193,7 @@
       <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="19" column="79" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,7 +211,7 @@
       <file leaf-file-name="LogChooser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LogChooser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="8" selection-start="5796" selection-end="5831" vertical-scroll-proportion="0.93772894">
+            <state line="170" column="8" selection-start="5943" selection-end="5943" vertical-scroll-proportion="2.3956954">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -519,7 +518,15 @@
       <created>1383493715945</created>
       <updated>1383493715945</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New GUI (doesn't repaint content table after new parsing)">
+      <created>1383505648133</created>
+      <updated>1383505648133</updated>
+    </task>
+    <task id="LOCAL-00005" summary="repaint fixed + filename fixed">
+      <created>1383511812862</created>
+      <updated>1383511812862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -544,9 +551,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,8 +571,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22626932" sideWeight="0.6091587" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39084134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22626932" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39084134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -615,7 +622,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="repaint fixed + filename fixed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -632,6 +639,8 @@
     <MESSAGE value="Change column name" />
     <MESSAGE value="Filename is summary" />
     <MESSAGE value="GUI improvements" />
+    <MESSAGE value="New GUI (doesn't repaint content table after new parsing)" />
+    <MESSAGE value="repaint fixed + filename fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -641,13 +650,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="71" selection-start="2750" selection-end="2750" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TableView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="53" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
@@ -729,18 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="0" selection-start="16582" selection-end="16582" vertical-scroll-proportion="0.33211008" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TableView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="88" selection-start="267" selection-end="303" vertical-scroll-proportion="0.0">
@@ -748,9 +738,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1277" column="35" selection-start="50230" selection-end="50230" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/image/ImageObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="39" selection-start="3335" selection-end="3335" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="79" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LogChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="8" selection-start="5796" selection-end="5831" vertical-scroll-proportion="0.93772894">
+        <state line="170" column="8" selection-start="5943" selection-end="5943" vertical-scroll-proportion="2.3956954">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
