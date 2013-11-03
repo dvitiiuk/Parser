@@ -24,7 +24,7 @@ public class LogChooser extends JPanel
     MatteBorder mb;
     Parser parser = new Parser();
     JTable data;
-    JScrollPane scrollData;
+    JScrollPane scrollData = new JScrollPane();
 
     JPanel byFile = new JPanel();
     JPanel byURL = new JPanel();
@@ -92,6 +92,8 @@ public class LogChooser extends JPanel
         byURL.add(byUrlButton);
 
         // results pane
+        copy = new JButton("Copy to clipboard");
+        copy.addActionListener(this);
         results.setVisible(false);
     }
 
@@ -154,25 +156,19 @@ public class LogChooser extends JPanel
 
 
     private void showResults(List<String> result) {
-        //To change body of created methods use File | Settings | File Templates.
-        //JFrame frame2 = new TableView("FrameDemo", parser.getCellsForTable(result));
         data = new JTable(parser.getCellsForTable(result),
                 new String[]{"Class name", "Test failure details"});
         data.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-        int firstColumnWidth = this.getWidth()/6;
-        int secondColumnWidth = this.getWidth()/2 - firstColumnWidth - JScrollBar.WIDTH;
-        data.getColumnModel().getColumn(0).setPreferredWidth(firstColumnWidth);
-        data.getColumnModel().getColumn(1).setPreferredWidth(secondColumnWidth);
+        int tableWidth = this.getWidth()/2;
+        int tableHeight = this.getHeight();
+        data.setPreferredSize(new Dimension(tableWidth, tableHeight));
+        results.remove(scrollData);
         scrollData = new JScrollPane(data);
         scrollData.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollData.setBounds(3, 3, firstColumnWidth + secondColumnWidth, this.getHeight() - 30);
-        results.add(scrollData, BorderLayout.NORTH);
-        copy = new JButton("Copy to clipboard");
-        copy.addActionListener(this);
-        //copy.setVisible(true);
-        results.add(copy, BorderLayout.SOUTH);
+        scrollData.setBounds(0, 0, tableWidth , this.getHeight() - 30 );
+        results.add(scrollData, BorderLayout.PAGE_START);
+        results.add(copy, BorderLayout.PAGE_END);
         results.setVisible(true);
-        this.repaint();
     }
 
 
@@ -180,7 +176,7 @@ public class LogChooser extends JPanel
         //Create and set up the window.
         JFrame frame = new JFrame("Log Chooser");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setMinimumSize(new Dimension(600, 490));
+        frame.setMinimumSize(new Dimension(600, 491));
 
         //Add content to the window.
         frame.add(new LogChooser());

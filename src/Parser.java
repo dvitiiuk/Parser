@@ -16,8 +16,9 @@ public class Parser {
     }
 
     public List<String> parseByFileName(String fileName) throws FileNotFoundException {
-        String[] fileNameSplitted = fileName.split("/");
-        this.fileName = fileNameSplitted[fileNameSplitted.length-1].replaceAll("-run.log","");
+        char slash = fileName.contains("/") ? '/' : '\\';
+        String fileNameSplitted = fileName.substring(fileName.lastIndexOf(slash)+1, fileName.length());
+        this.fileName = fileNameSplitted.replaceAll("-run.log","");
         return parse(FileWorker.read(fileName));
     }
 
