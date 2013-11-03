@@ -79,20 +79,20 @@ public class Parser {
         int errors = 0;
         int testsSum = 0;
         int failures = 0;
-        int skiped = 0;
+        int skipped = 0;
 
         for(int i = 1; i < testsRun.length; i+=2) {
-            errors+=Integer.parseInt(error[i].split(",")[0]);
-            failures+=Integer.parseInt(failed[i].split(",")[0]);
-            testsSum+=Integer.parseInt(testsRun[i].split(",")[0]);
-            skiped+=Integer.parseInt(skip[i].split(",")[0].split("\n")[0]);
+            errors += Integer.parseInt(error[i].split(",")[0]);
+            failures += Integer.parseInt(failed[i].split(",")[0]);
+            testsSum += Integer.parseInt(testsRun[i].split(",")[0]);
+            skipped += Integer.parseInt(skip[i].split(",")[0].split("\n")[0]);
         }
-        int passed = testsSum - errors - skiped - failures;
+        int passed = testsSum - errors - skipped - failures;
         return fileName + " #_Total_test_cases_ran______________:_" + testsSum +
                " #_Total_test_cases_passed___________:_" + passed +
                " #_Total_test_cases_failed___________:_" + failures +
-               " #_Total_test_cases_skipped__________:_" + skiped +
-               " #_Total_test_cases_failed_dependecy_:_" + errors;
+               " #_Total_test_cases_skipped__________:_" + skipped +
+               " #_Total_test_cases_failed_dependency_:_" + errors;
     }
 
     public Object[][] getCellsForTable(List<String> failedTests) {

@@ -5,91 +5,118 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.List;
 import javax.swing.*;
+import javax.swing.border.MatteBorder;
+import javax.swing.border.TitledBorder;
 
 public class LogChooser extends JPanel
                              implements ActionListener {
     static private final String newline = "\n";
-    JButton byUrlButton;
-    JTextField urlField;
-    JButton openButton, byJobNumberButton;
+    JTextField urlField, jobNumber, fileName;
+    JButton openFileButton, parseChosenFile, byJobNumberButton, byUrlButton;
     JTextArea log;
     JFileChooser fc;
-    JTextField jobNumber;
     List<String> result;
+    TitledBorder tb;
+    MatteBorder mb;
 
     Parser parser = new Parser();
 
     public LogChooser() {
-        super(new BorderLayout());
+        this.setLayout(new GridLayout(3, 1));
+        JPanel byFile = new JPanel();
+        JPanel byURL = new JPanel();
+        JPanel byJobNumber = new JPanel();
+
+        mb = new MatteBorder(1, 1, 1, 1, Color.GRAY);
+        add(byFile);
+        add(byURL);
+        add(byJobNumber);
 
         //Create the log first, because the action listeners
         //need to refer to it.
-        log = new JTextArea(5,20);
-        log.setMargin(new Insets(5,5,5,5));
+        log = new JTextArea(5, 20);
+        log.setMargin(new Insets(5, 5, 5, 5));
         log.setEditable(false);
         jobNumber = new JTextField(15);
-        urlField = new JTextField();
+        urlField = new JTextField(15);
+        fileName = new JTextField(15);
 
         //Create a file chooser
         fc = new JFileChooser();
 
-        openButton = new JButton("Open a log file...");
-        openButton.addActionListener(this);
 
-        byJobNumberButton = new JButton("Parse job");
+
+        byJobNumberButton = new JButton("Parse");
         byJobNumberButton.addActionListener(this);
 
 
-        byUrlButton = new JButton("Parse job");
+        byUrlButton = new JButton("Parse");
         byUrlButton.addActionListener(this);
 
-        //For layout purposes, put the buttons in a separate panel
-        JPanel logFileChooser = new JPanel(new BorderLayout());
-        JPanel jobParser = new JPanel(new BorderLayout());
-        JPanel urlParser = new JPanel(new BorderLayout());
+        // byFile panel filling
+        byFile.setLayout(new FlowLayout());
+        tb = new TitledBorder(mb, " Choose file: " , TitledBorder.CENTER, TitledBorder.DEFAULT_POSITION);
+        parseChosenFile = new JButton("Parse");
+        parseChosenFile.setFocusPainted(false);
+        parseChosenFile.addActionListener(this);
+        parseChosenFile.setSize(50, 25);
+        byFile.setBorder(tb);
+        byFile.add(fileName);
+        openFileButton = new JButton("...");
+        openFileButton.addActionListener(this);
 
-        logFileChooser.add(openButton, BorderLayout.PAGE_END);
-        logFileChooser.add(new JLabel("Parse log file:"), BorderLayout.PAGE_START);
+        byFile.add(openFileButton);
+        byFile.add(parseChosenFile);
 
-        jobParser.add(byJobNumberButton, BorderLayout.EAST);
-        jobParser.add(jobNumber, BorderLayout.CENTER);
-        jobParser.add(new JLabel("Parse by job number:"), BorderLayout.PAGE_START);
+        // byJobNumber panel filling
+        byJobNumber.setLayout(new FlowLayout());
+        tb = new TitledBorder(mb, " Enter job number: " , TitledBorder.CENTER, TitledBorder.DEFAULT_POSITION);
+        byJobNumber.setBorder(tb);
+        byJobNumber.add(jobNumber);
+        byJobNumber.add(byJobNumberButton);
 
-        urlParser.add(urlField, BorderLayout.CENTER);
-        urlParser.add(byUrlButton, BorderLayout.PAGE_END);
-        urlParser.add(new JLabel("Parse by log url:"), BorderLayout.PAGE_START);
+        // byURL panel filling
+        byURL.setLayout(new FlowLayout());
+        tb = new TitledBorder(mb, " Enter URL: " , TitledBorder.CENTER, TitledBorder.DEFAULT_POSITION);
+        byURL.setBorder(tb);
+        byURL.add(urlField);
+        byURL.add(byUrlButton);
 
-        add(logFileChooser, BorderLayout.PAGE_START);
-        add(jobParser, BorderLayout.CENTER);
-        add(urlParser, BorderLayout.PAGE_END);
+;
+
     }
 
     public void actionPerformed(ActionEvent e) {
 
         //Handle open button action.
-        if (e.getSource() == openButton) {
+
+        if (e.getSource() == openFileButton) {
             int returnVal = fc.showOpenDialog(LogChooser.this);
 
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 File file = fc.getSelectedFile();
-                //This is where a real application would open the file.
-                log.append("Opening: " + file.getName() + "." + newline);
+                log.append("Opening: " + file.getName() + "..." + newline);
                 log.setCaretPosition(log.getDocument().getLength());
-                try {
-                    result = parser.parseByFileName(file.getAbsolutePath());
-                    showResults(result);
-
-                } catch (FileNotFoundException e1) {
-                    e1.printStackTrace();
-                }
+                fileName.setText(file.getAbsolutePath());
             } else {
                 log.append("Open command cancelled by user." + newline);
                 log.setCaretPosition(log.getDocument().getLength());
             }
 
 
-        //Handle save button action.
+
+        } else if (e.getSource() == parseChosenFile) {
+
+            try {
+                result = parser.parseByFileName(fileName.getText());
+                showResults(result);
+
+            } catch (FileNotFoundException e1) {
+                e1.printStackTrace();
+            }
+
         } else if (e.getSource() == byJobNumberButton) {
+
             int job = Integer.parseInt(jobNumber.getText());
             try {
                 result = parser.parseByTaskNumber(job);
@@ -123,8 +150,9 @@ public class LogChooser extends JPanel
 
     static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("LogChooser");
+        JFrame frame = new JFrame("Log Chooser");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setMinimumSize(new Dimension(300, 300));
 
         //Add content to the window.
         frame.add(new LogChooser());
