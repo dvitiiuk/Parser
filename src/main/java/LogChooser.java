@@ -187,4 +187,14 @@ public class LogChooser extends JPanel
 
     }
 
+    public static void main(String... args) {
+
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                LogChooser.createAndShowGUI();
+            }
+        });
+
+    }
+
 }
