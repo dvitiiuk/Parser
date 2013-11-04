@@ -1,15 +1,13 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HTMLContentGetter {
     /**
      * @author Ruslan Ostafiychuk
      */
-    public static String getLogByUrl(String url) {
+    public static String getLogByUrl(String url) throws FileNotFoundException, MalformedURLException {
         StringBuffer log = new StringBuffer();
         try {
             URL logUrl = new URL(url);
@@ -23,8 +21,13 @@ public class HTMLContentGetter {
             }
             content.close();
             in.close();
-        } catch (IOException e) {
+        } catch (FileNotFoundException fileE) {
+            throw fileE;
+        }  catch (MalformedURLException urlException) {
+            throw urlException;
+        }    catch (IOException e) {
             e.printStackTrace();
+
         }
         return log.toString();
     }

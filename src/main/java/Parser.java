@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,12 +23,12 @@ public class Parser {
         return parse(FileWorker.read(fileName));
     }
 
-    public List<String> parseByTaskNumber(int taskNumber) throws FileNotFoundException {
+    public List<String> parseByTaskNumber(int taskNumber) throws FileNotFoundException, MalformedURLException {
         this.taskNumber = taskNumber;
         return parse(HTMLContentGetter.getLogByUrl(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%s/consoleText", taskNumber)));
     }
 
-    public List<String> parseByURL(String url) throws FileNotFoundException {
+    public List<String> parseByURL(String url) throws FileNotFoundException, MalformedURLException {
         if (url.contains("Run-HDP-Tests")) {
             this.taskNumber = Integer.parseInt(url.split("Tests/")[1].split("/")[0]);
         } else {
@@ -48,9 +49,12 @@ public class Parser {
             res.add(clusterName+" "+forAdd);
         } else res.add(countAll(content));
 
-
-        res.add(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%d/",taskNumber));
-
+        if (taskNumber > 0) {
+            res.add(String.format("http://10.10.11.125:8080/job/Run-HDP-Tests/%d/",taskNumber));
+        } else {
+            res.add("");
+        }
+        taskNumber = 0;
         String[] raw = content.split("Results :");
         String[] tests = new String[raw.length -1];
         for (int i = 1; i < raw.length; i++) { tests[i-1] = raw[i].split("\nTests run:")[0]; }

@@ -7,6 +7,7 @@ import java.awt.datatransfer.Transferable;
 import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.net.MalformedURLException;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
@@ -127,15 +128,21 @@ public class LogChooser extends JPanel
             }
 
         } else if (e.getSource() == byJobNumberButton) {
-
-            int job = Integer.parseInt(jobNumber.getText());
             try {
-                result = parser.parseByTaskNumber(job);
-                showResults(result);
+                int job = Integer.parseInt(jobNumber.getText());
+                try {
+                    result = parser.parseByTaskNumber(job);
+                    showResults(result);
 
-            } catch (FileNotFoundException e1) {
-                e1.printStackTrace();
+                } catch (FileNotFoundException e1) {
+                    JOptionPane.showMessageDialog(new JFrame(), "Job is not found");
+                } catch (MalformedURLException e1) {
+                    JOptionPane.showMessageDialog(new JFrame(), "Error in URL");
+                }
+            } catch(NumberFormatException e3) {
+                JOptionPane.showMessageDialog(new JFrame(), "Enter number of job");
             }
+
         } else if (e.getSource() == byUrlButton) {
             String url = urlField.getText();
             try {
@@ -143,7 +150,9 @@ public class LogChooser extends JPanel
                 showResults(result);
 
             } catch (FileNotFoundException e1) {
-                e1.printStackTrace();
+                JOptionPane.showMessageDialog(new JFrame(), "Job log is not found by this URL");
+            } catch (MalformedURLException e1) {
+                JOptionPane.showMessageDialog(new JFrame(), "Error in URL");
             }
         } else if (e.getSource() == copy) {
             data.selectAll();
