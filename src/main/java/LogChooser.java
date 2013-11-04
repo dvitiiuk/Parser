@@ -46,8 +46,11 @@ public class LogChooser extends JPanel
         log.setMargin(new Insets(5, 5, 5, 5));
         log.setEditable(false);
         jobNumber = new JTextField(20);
+        jobNumber.addActionListener(this);
         urlField = new JTextField(20);
+        urlField.addActionListener(this);
         fileName = new JTextField(20);
+        fileName.addActionListener(this);
 
         //Create a file chooser
         fc = new JFileChooser();
@@ -111,7 +114,7 @@ public class LogChooser extends JPanel
 
 
 
-        } else if (e.getSource() == parseChosenFile) {
+        } else if (e.getSource() == parseChosenFile || e.getSource() == fileName) {
 
             try {
                 result = parser.parseByFileName(fileName.getText());
@@ -121,7 +124,7 @@ public class LogChooser extends JPanel
                 e1.printStackTrace();
             }
 
-        } else if (e.getSource() == byJobNumberButton) {
+        } else if (e.getSource() == byJobNumberButton || e.getSource() == jobNumber) {
             try {
                 int job = Integer.parseInt(jobNumber.getText());
                 try {
@@ -137,7 +140,7 @@ public class LogChooser extends JPanel
                 showErrorDialog("Enter job number");
             }
 
-        } else if (e.getSource() == byUrlButton) {
+        } else if (e.getSource() == byUrlButton || e.getSource() == urlField) {
             String url = urlField.getText();
             try {
                 result = parser.parseByURL(url);
