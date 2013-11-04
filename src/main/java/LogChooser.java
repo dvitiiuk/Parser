@@ -1,9 +1,3 @@
-
-
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.ClipboardOwner;
-import java.awt.datatransfer.StringSelection;
-import java.awt.datatransfer.Transferable;
 import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -135,12 +129,12 @@ public class LogChooser extends JPanel
                     showResults(result);
 
                 } catch (FileNotFoundException e1) {
-                    JOptionPane.showMessageDialog(new JFrame(), "Job is not found");
+                    showErrorDialog("Job is not found");
                 } catch (MalformedURLException e1) {
-                    JOptionPane.showMessageDialog(new JFrame(), "Error in URL");
+                    showErrorDialog("Error in URL");
                 }
             } catch(NumberFormatException e3) {
-                JOptionPane.showMessageDialog(new JFrame(), "Enter number of job");
+                showErrorDialog("Enter job number");
             }
 
         } else if (e.getSource() == byUrlButton) {
@@ -150,9 +144,11 @@ public class LogChooser extends JPanel
                 showResults(result);
 
             } catch (FileNotFoundException e1) {
-                JOptionPane.showMessageDialog(new JFrame(), "Job log is not found by this URL");
+                JFrame frame = new JFrame();
+                frame.setLocationRelativeTo(this);
+                showErrorDialog("Job log is not found by this URL");
             } catch (MalformedURLException e1) {
-                JOptionPane.showMessageDialog(new JFrame(), "Error in URL");
+                showErrorDialog("Error in URL");
             }
         } else if (e.getSource() == copy) {
             data.selectAll();
@@ -174,7 +170,7 @@ public class LogChooser extends JPanel
         results.remove(scrollData);
         scrollData = new JScrollPane(data);
         scrollData.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollData.setBounds(0, 0, tableWidth , this.getHeight() - 30 );
+        scrollData.setBounds(0, 0, tableWidth , this.getHeight() - 30);
         results.add(scrollData, BorderLayout.PAGE_START);
         results.add(copy, BorderLayout.PAGE_END);
         results.setVisible(true);
@@ -194,6 +190,13 @@ public class LogChooser extends JPanel
         frame.pack();
         frame.setVisible(true);
 
+    }
+
+    private void showErrorDialog(String message){
+        final JOptionPane pane = new JOptionPane(message);
+        final JDialog d = pane.createDialog((JFrame)null, "Error");
+        d.setLocationRelativeTo(this);
+        d.setVisible(true);
     }
 
     public static void main(String... args) {
