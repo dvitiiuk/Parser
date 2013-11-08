@@ -166,14 +166,11 @@ public class LogChooser extends JPanel
     private void showResults(List<String> result) {
         data = new JTable(parser.getCellsForTable(result),
                 new String[]{"Class name", "Test failure details"});
-        data.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-        int tableWidth = this.getWidth()/2;
-        int tableHeight = this.getHeight();
-        data.setPreferredSize(new Dimension(tableWidth, tableHeight));
+        data.getColumnModel().getColumn(0).setPreferredWidth(150);
+        data.getColumnModel().getColumn(0).setMaxWidth(150);
         results.remove(scrollData);
         scrollData = new JScrollPane(data);
-        scrollData.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollData.setBounds(0, 0, tableWidth , this.getHeight() - 30);
+        scrollData.setBounds(0, 0, this.getWidth() / 2 , this.getHeight() - 42);
         results.add(scrollData, BorderLayout.PAGE_START);
         results.add(copy, BorderLayout.PAGE_END);
         results.setVisible(true);
