@@ -66,7 +66,7 @@ public class Parser {
                 String[] lines = test.split("\n");
                 for (String line : lines) {
                     line = line.trim();
-                    if (line.length() > 0 && line.contains("com.hw")) {
+                    if (line.length() > 0 && line.contains("com.")) {
                         res.add(line);
                     }
                 }
