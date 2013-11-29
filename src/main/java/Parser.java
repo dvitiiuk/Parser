@@ -93,11 +93,11 @@ public class Parser {
             skipped += Integer.parseInt(skip[i].split(",")[0].split("\n")[0]);
         }
         int passed = testsSum - errors - skipped - failures;
-        return fileName + " #_Total_test_cases_ran______________:_" + testsSum +
-               " #_Total_test_cases_passed___________:_" + passed +
-               " #_Total_test_cases_failed___________:_" + failures +
-               " #_Total_test_cases_skipped__________:_" + skipped +
-               " #_Total_test_cases_failed_dependency_:_" + errors;
+        return fileName + " #\u00A0Total\u00A0test\u00A0cases\u00A0ran:\u00A0" + testsSum +
+               " #\u00A0Total\u00A0test\u00A0cases\u00A0passed:\u00A0" + passed +
+               " #\u00A0Total\u00A0test\u00A0cases\u00A0failed:\u00A0" + failures +
+               " #\u00A0Total\u00A0test\u00A0cases\u00A0skipped:\u00A0" + skipped +
+               " #\u00A0Total\u00A0test\u00A0cases\u00A0failed\u00A0dependency:\u00A0" + errors;
     }
 
     public Object[][] getCellsForTable(List<String> failedTests) {
