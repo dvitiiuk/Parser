@@ -66,7 +66,7 @@ public class Parser {
                 String[] lines = test.split("\n");
                 for (String line : lines) {
                     line = line.trim();
-                    if (line.length() > 0 && line.contains("com.")) {
+                    if (line.length() > 0 && line.contains(":")) {
                         res.add(line);
                     }
                 }
@@ -101,22 +101,23 @@ public class Parser {
     }
 
     public Object[][] getCellsForTable(List<String> failedTests) {
-        Object[][] res = new Object[failedTests.size()-1][2];
+        Object[][] res = new Object[failedTests.size()-1][3];
 
         res[0][0] = failedTests.get(0);
         res[0][1] = failedTests.get(1);
-        Pattern p = Pattern.compile("\\(([\\w\\d]+\\.)+([\\w\\d]+)\\)");
+        Pattern p = Pattern.compile("([\\w\\d_]+)+\\.([\\w\\d_]+):");
         String className = "";
         for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
             m.find();
-            if (className.equals(m.group(2))) {
+            if (className.equals(m.group(1))) {
                 res[i-1][0] = "";
             } else {
-                className = m.group(2);
+                className = m.group(1);
                 res[i-1][0] = className;
             }
-            res[i-1][1] = failedTests.get(i);
+            res[i-1][1] = m.group(2);
+            res[i-1][2] = failedTests.get(i).substring(failedTests.get(i).indexOf(':') + 1);
         }
         return res;
     }

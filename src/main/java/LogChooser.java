@@ -165,7 +165,7 @@ public class LogChooser extends JPanel
 
     private void showResults(List<String> result) {
         data = new JTable(parser.getCellsForTable(result),
-                new String[]{"Class name", "Test failure details"});
+                new String[]{"Class name", "Test failure details", "Reason"});
         data.getColumnModel().getColumn(0).setPreferredWidth(150);
         data.getColumnModel().getColumn(0).setMaxWidth(150);
         results.remove(scrollData);
