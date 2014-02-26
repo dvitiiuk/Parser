@@ -109,8 +109,7 @@ public class Parser {
         String className = "";
         for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
-            m.find();
-            if (className.equals(m.group(2))) {
+            if (!m.find() || className.equals(m.group(2))) {
                 res[i-1][0] = "";
             } else {
                 className = m.group(2);
