@@ -110,12 +110,14 @@ public class Parser {
         for (int i = 2; i < failedTests.size(); i++) {
             Matcher m = p.matcher(failedTests.get(i));
             m.find();
-            if (className.equals(m.group(2))) {
-                res[i-1][0] = "";
-            } else {
-                className = m.group(2);
-                res[i-1][0] = className;
-            }
+            try {
+                if (className.equals(m.group(2))) {
+                    res[i-1][0] = "";
+                } else {
+                    className = m.group(2);
+                    res[i-1][0] = className;
+                }
+            } catch (Exception e) {res[i-1][0] = "";}
             res[i-1][1] = failedTests.get(i);
         }
         return res;
